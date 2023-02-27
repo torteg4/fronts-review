@@ -27,12 +27,19 @@ class SLL {
     }
 
     //FRONT
-    
+    front() {
+        if (this.head == null) {
+            return this.head;
+        }
+        return this.head.value;
+    }
 }
 
 var fancySLL = new SLL();
 
+console.log("Front value with no list:", fancySLL);
 fancySLL.addFront(18);
+console.log("Front value with list:", fancySLL);
 fancySLL.addFront(5);
 fancySLL.addFront(73);
 console.log("Original SLL:", fancySLL);
